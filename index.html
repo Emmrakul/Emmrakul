@@ -5,48 +5,74 @@
         <title>Coding with Emmie</title>
     </head>
     <body>
-        <header>
-            <h1>Emmie Learns to Code</h1>
-            <p>A simple webpage where Emmie can practice their coding skills</p>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-        </header>
-          <p> Emmie Cole is becoming an accomplished programmer in JavaScript, but they are quickly learning HTML, CSS, and so much more...</p>
-          <a href='https://teamtreehouse.com/emmiecole' target='_blank'>View Emmie's Treehouse Profile</a>
-        <section id='about'>
-            <h2>About this site</h2>
-            <p>This site is where Emmie will practice their burgeoning web development skills. Right now it is simple HTML, but it will soon incorporate JavaScript and CSS. Emmie is learning the best practices for HTML, CSS, and JavaScript and how they all work together to make fun and interesting websites. </p>
-        </section>
-        <section id='projects'>
-            <h2>My Coding Projects</h2>
-            <h3>How I used JavaScript to win at BINGO</h3>
-            <p>In order to practice my skills with JavaScript arrays, strings, and randomness I wrote a function that created a random BINGO card. My favorite part was using the Fisher-Yates algorithm to randomly select the numbers. But the most challenging part was...<a href="#">Read More</a>.</p>
-            <h3>Using GitPages to Practice Web Design</h3>
-            <p>After setting up my GitHub account I learned that you cann use GitPages to host various projects and a user profile. While it isn't much to look at yet, I am excited that I was able to link GitPages to my account and begin hosting a small webpage. I really look forward to adding to it as my skills improve! <a href ="#">Read More</a></p>
-        </section>
-           <h3 id='resources'>Top Resources for Learning to Code</h3>
-            <ul>
-               <li>Mozilla Developers Network</li>
-               <li>CodePen</li>
-               <li>CodeWars</li>
-               <li>Treehouse</li>
-               <li>Eloquent Javascript</li>
-            </ul> 
-        <section id='contact'>
-            <h2>Contact Me</h2>
-            <ul>
-               <li>Email</li>
-               <li>Phone</li>
-               <li>Webpage</li>
-            </ul>
-        </section>
-        <footer>
-            <p>&copy;2019 Emmie Learns to Code, the Website</p>
-        </footer>
+        <div id='page'>
+            <header id='title'>
+                <h1>Emmie Learns to Code</h1>
+                <p>A simple webpage where Emmie can practice their coding skills</p>
+                <nav>
+                    <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id='tagline'>
+                <p> Emmie Cole is becoming an accomplished programmer in JavaScript, but they are quickly learning HTML, CSS, and so much more...</p>
+                <a href='https://teamtreehouse.com/emmiecole' target='_blank'>View Emmie's Treehouse Profile</a>
+            </div>
+            <main>
+                <section class='about'>
+                    <h2>About this site</h2>
+                    <p>This site is where Emmie will practice their burgeoning web development skills. Right now it is simple HTML, but it will soon incorporate JavaScript and CSS. Emmie is learning the best practices for HTML, CSS, and JavaScript and how they all work together to make fun and interesting websites. </p>
+                </section>
+                <section class='projects'>
+                    <h2>My Coding Projects</h2>
+                    <article>
+                        <header>
+                            <h3>How I used JavaScript to win at BINGO</h3>
+                            <p>By: Emmie</p>
+                        </header>
+                        <p>In order to practice my skills with JavaScript arrays, strings, and randomness I wrote a function that created a random BINGO card. My favorite part was using the Fisher-Yates algorithm to randomly select the numbers. But the most challenging part was...<a href="article.html">Read More</a>.</p>
+                        <footer>Published: Coming soon!</footer>
+                    </article>
+                    <article>
+                        <header>
+                            <h3>Using GitPages to Practice Web Design</h3>
+                            <p>By: Emmie</p>
+                        </header>
+                        <p>After setting up my GitHub account I learned that you cann use GitPages to host various projects and a user profile. While it isn't much to look at yet, I am excited that I was able to link GitPages to my account and begin hosting a small webpage. I really look forward to adding to it as my skills improve! <a href ="article.html">Read More</a></p>
+                    <footer>Published: Coming soon!</footer>
+                    </article>
+                </section>
+                <section class='contact'>
+                    <h2>Contact Me</h2>
+                    <ul>
+                        <li>Email</li>
+                        <li>Phone</li>
+                        <li>Webpage</li>
+                    </ul>
+                </section>
+            </main>
+            <aside class='resources'>
+            <h3>Top Resources for Learning to Code</h3>
+                <ul>
+                <li><a href='#' target='_blank'>Mozilla Developers Network</a></li>
+                <li><a href='#' target='_blank'>CodePen</a></li>
+                <li><a href='#' target='_blank'>CodeWars</a></li>
+                <li><a href='#' target='_blank'>Treehouse</a></li>
+                <li><a href='#' target='_blank'>Eloquent Javascript</a></li>
+                </ul> 
+                <blockquote cite='http://cedreich.com/quotesondev/waseem-latif/'>
+                        “Give a man a program, frustrate him for a day. Teach a man to program, frustrate him for a lifetime.” 
+                        <footer>-Waseem Latif</footer> 
+                </blockquote>
+            </aside>
+            <footer>
+                <p>&copy;2019 Emmie Learns to Code, the Website</p>
+            </footer>
+        </div>
         <script src='app.js'></script>
     </body>
 </html>

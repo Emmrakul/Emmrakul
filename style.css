@@ -1,0 +1,44 @@
+body {
+    background-color:wheat;
+    color: #001242;
+}
+#page {
+    margin: 5px;
+}
+#title {
+    background-color: #001242;
+    color: #b3c8fa;
+    padding: 8px;
+    border: #001242 solid 3px;
+}
+
+a {
+    color: indigo ;
+}
+
+a:hover{
+    color: #e0115f
+}
+
+#title a {
+    color:lavenderblush;
+}
+
+#title a:hover {
+    color: salmon;
+}
+
+h1 {
+    padding: 5px;
+}
+
+section {
+    border: #001242 5px solid;
+    margin: 15px;
+    padding: 15px;
+    background-color: white;  
+}
+
+.projects {
+    background-color: #b3c8fa;
+}
