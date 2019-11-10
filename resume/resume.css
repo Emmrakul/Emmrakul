@@ -1,0 +1,25 @@
+body {
+    font-family: "Arial"; 
+   }
+   
+   .profile-pic {
+     border: solid black 4px;
+     border-radius: 50%; 
+   }
+   
+   h1 {
+     background-color: #e2e2e2;
+     padding: 8px;
+   }
+   
+   .section-title {
+     text-transform: uppercase;
+   }
+   
+   a {
+     text-decoration: none;
+     color: #0499ff;
+   }
+   a:hover {
+     color: #6633ff;
+   }

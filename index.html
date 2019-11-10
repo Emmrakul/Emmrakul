@@ -11,43 +11,74 @@
                 <p>A simple webpage where Emmie can practice their coding skills</p>
                 <nav>
                     <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#title">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </header>
             <div id='tagline'>
-                <img src='img/profile pic small.jpg' alt='Emmie the Dancer'>
                 <p> Emmie Cole is becoming an accomplished programmer in JavaScript, but they are quickly learning HTML, CSS, and so much more...</p>
                 <a href='https://teamtreehouse.com/emmiecole' target='_blank'>View Emmie's Treehouse Profile</a>
+                        <figure>
+                            <img src='img/profile pic med.jpg' alt='Emmie Dancing' id='profilepic'>
+                            <figcaption>When they aren't coding, Emmie can be found dancing dramatically.</figcaption>
+                        </figure>
             </div>
             <main>
-                <section class='about'>
-                    <h2>About this site</h2>
+                <section id='about'>                    
+                    <h2>About the Site</h2>
                     <p>This site is where Emmie will practice their burgeoning web development skills. Right now it is simple HTML, but it will soon incorporate JavaScript and CSS. Emmie is learning the best practices for HTML, CSS, and JavaScript and how they all work together to make fun and interesting websites. </p>
+                    <figure>
+                        <img src='img/tech graphic transparent.png' alt='A stylized image about art and tech'>
+                        <figcaption>Coding requires technical knowledge and artistic creativity.</figcaption>
+                    </figure>
+                    <h2>About Me</h2>
+                    <div class="card">
+                            <h3 class="card-title">Background</h3>
+                            <ul>
+                              <li>I’m an aspiring web designer and -eventually- full stack developer. I've lived in North Carolina my whole life and have worked in lots of different jobs.</li>
+                              <li> I’m excited to bring my life experience to the process of building fantastic looking websites.</li>
+                              <li>I’ve been a research project coordinator and a healthcare professional. I am a life-long learner who's always interested in expanding my skills.</li>
+                            </ul>
+                           
+                            <ul>
+                              <li>To learn more, <a href="resume/resume.html" target="_blank">view my resume.</a></li>
+                            </ul>
+                          </div> 
+                    
+                          <div class="card">
+                            <h3 class="card-title">Goals</h3>
+                            <p>I want to master the process of building web sites and increase my knowledge, skills and abilities in:</p>
+                            <ul class="skills">
+                              <li>HTML</li>
+                              <li>CSS</li>
+                              <li>JavaScript</li>
+                            </ul>
+                            <p>I’d like to work for a web design firm helping clients create an impressive online presence.</p>
+                          </div> 
                 </section>
-                <section class='projects'>
+                <section id='projects'>
                     <h2>My Coding Projects</h2>
-                    <article>
+                    <article class='preview'>
                         <header>
                             <h3>How I used JavaScript to win at BINGO</h3>
                             <p>By: Emmie</p>
                         </header>
-                        <p>In order to practice my skills with JavaScript arrays, strings, and randomness I wrote a function that created a random BINGO card. My favorite part was using the Fisher-Yates algorithm to randomly select the numbers. But the most challenging part was...<a href="articles/article.html">Read More</a>.</p>
+                        <p>In order to practice my skills with JavaScript arrays, strings, and randomness I wrote a function that created a random BINGO card. My favorite part was using the Fisher-Yates algorithm to randomly select the numbers. But the most challenging part was...<a href="articles/article.html#project-title">Read More</a>.</p>
                         <footer>Published: Coming soon!</footer>
                     </article>
-                    <article>
+                    <article class='preview'>
                         <header>
                             <h3>Using GitPages to Practice Web Design</h3>
                             <p>By: Emmie</p>
                         </header>
-                        <p>After setting up my GitHub account I learned that you cann use GitPages to host various projects and a user profile. While it isn't much to look at yet, I am excited that I was able to link GitPages to my account and begin hosting a small webpage. I really look forward to adding to it as my skills improve! <a href ="articles/article.html">Read More</a></p>
+                        <p>After setting up my GitHub account I learned that you cann use GitPages to host various projects and a user profile. While it isn't much to look at yet, I am excited that I was able to link GitPages to my account and begin hosting a small webpage. I really look forward to adding to it as my skills improve! <a href ="articles/article.html#project-title">Read More</a></p>
                     <footer>Published: Coming soon!</footer>
                     </article>
                 </section>
-                <section class='contact'>
+                <section id='contact'>
                     <h2>Contact Me</h2>
                     <ul>
                         <li>Email</li>
@@ -65,13 +96,15 @@
                 <li><a href='#' target='_blank'>Treehouse</a></li>
                 <li><a href='#' target='_blank'>Eloquent Javascript</a></li>
                 </ul> 
+                <hr>
                 <blockquote cite='http://cedreich.com/quotesondev/waseem-latif/'>
                         “Give a man a program, frustrate him for a day. Teach a man to program, frustrate him for a lifetime.” 
                         <footer>-Waseem Latif</footer> 
                 </blockquote>
             </aside>
             <footer>
-                <p>&copy;2019 Emmie Learns to Code, the Website</p>
+                <a href='#title'>Back to Top</a>
+                <p><small>&copy;2019 Emmie Learns to Code, the Website</small></p>
             </footer>
         </div>
         <script src='app.js'></script>
